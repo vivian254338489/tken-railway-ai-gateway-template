@@ -1,0 +1,19 @@
+{
+  "name": "tken-railway-ai-gateway-template",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "preflight": "node preflight.mjs",
+    "start": "node server.mjs",
+    "check": "node preflight.mjs && node smoke.mjs --spawn"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.5.0"
+  }
+}
